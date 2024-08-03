@@ -68,7 +68,7 @@ def check_if_tie():
 
 print(game_init())
 
-subreddit = reddit.subreddit("YOUR_SUBREDDIT")
+subreddit = reddit.subreddit("testingground4bots")
 for comment in subreddit.stream.comments(skip_existing=True):
     if comment.body.lower().startswith("move"):
         user_input = comment.body.split()[1]
